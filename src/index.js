@@ -1,11 +1,5 @@
-class HelloWorld {
-  message = 'Hello World';
-  print = () => this.message;
-}
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
 
-const hello = new HelloWorld();
-// eslint-disable-next-line no-console
-console.log(
-  `%c ${hello.print()}`,
-  `color: green; font-size:48px; weight: bold`,
-);
+ReactDOM.render(<App />, document.getElementById('app'));
